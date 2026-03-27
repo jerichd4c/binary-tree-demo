@@ -32,7 +32,7 @@
 
 ## About The Project
 
-This project contains optimized C++ implementations of specialized data structures crafted for academic coursework:
+This project contains optimized C++ implementations of specialized data structures:
 - **`ArboGenealogico.cpp`**: Parses structured `.csv` data to construct, query, and modify an interactive N-ary Genealogy Tree.
 - **`ArbolAvl.cpp`**: Implements a self-balancing binary search tree (AVL) for continuous logarithmic time complexity operations.
 
