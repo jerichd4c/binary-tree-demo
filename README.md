@@ -1,21 +1,104 @@
-Codigo relacionado a la parte de laboratorio de la materia Estructura dinamica de datos.
+<a id="readme-top"></a>
 
-1. Indicaciones de la tarea:
-a. Realizar una plantilla de árbol binario que se autobalance al insertar o eliminar un nodo de manera no recursiva. Realizar un programa donde se vea el uso de dicha plantilla.
-b. Realizar un programa que permita registrar el arbol genealogico de una persona a partir de un .csv en un árbol. La raiz del arbol es la persona que quiere realizar el arbol.
-Los hermanos se guardan en una lista en el nodo correspondiente. No incluir primos.
+<div align="center">
+  <h3 align="center">Binary Tree Demo</h3>
 
-2. ESTRUCTURA DEL CODIGO: 
-El programa consiste de:
+  <p align="center">
+    A comprehensive C++ project implementing advanced data structures including Genealogy Trees and AVL Trees.
+  </p>
+</div>
 
-* carpeta "src": contiene el codigo fuente (escrito en C++) del programa nro. 1 (ArbolAvl.CPP) y del programa nro. 2 (ArbolGenealogico.CPP)
-* carpeta "bin": contiene el ejecutable de los dos codigos fuente (ArbolAvl.CPP y ArbolGenealogico.CPP)
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-3. INSTRUCCIONES DE USO:
+## About The Project
 
-a. Arbol binario autobalanceado:
-  * ir a la carpeta "bin" y corer el .EXE llamado "ArbolAvl.exe" este mismo contiene un input del usuario para que este pueda salir del programa a voluntad.
+This project contains optimized C++ implementations of specialized data structures crafted for academic coursework:
+- **`ArboGenealogico.cpp`**: Parses structured `.csv` data to construct, query, and modify an interactive N-ary Genealogy Tree.
+- **`ArbolAvl.cpp`**: Implements a self-balancing binary search tree (AVL) for continuous logarithmic time complexity operations.
 
-b. Arbol genealogico:
-  * ir a la carpeta "bin" y correr el .EXE llamado "ArbolGenealogico.exe" este contiene un menu al usuario para que pueda realizar multiples funciones.
-  NOTA: en caso de que el usuario quiera volver a reestablecer los datos, este puede ir al .TXT del arbol genealogico y guardarlo.csv para comenzar desde 0.
+### Built With
+
+* [![C++][Cpp-shield]][Cpp-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps to compile the source code natively via GCC/G++.
+
+### Prerequisites
+
+* GCC / G++ compiler (MinGW on Windows, or standard packages natively on Linux/macOS)
+* Support for C++11 or higher
+
+### Installation & Compilation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jerichd4c/binary-tree-demo.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd cpp-data-structures-lab
+   ```
+3. Compile the desired data structure into the `bin/` folder
+   ```sh
+   # Compile Genealogy Tree
+   g++ src/ArboGenealogico.cpp -o bin/ArboGenealogico.exe
+   
+   # Compile AVL Tree
+   g++ src/ArbolAvl.cpp -o bin/ArbolAvl.exe
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Roadmap
+
+- [ ] Implement a proper tree data structure for the genealogy tree.
+- [ ] Refactor the first tree implementation to use recursive methods.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+Execute the compiled binaries directly from the workspace root (this ensures relative data files, like `arbolGenealogico.csv` located inside `bin/`, load correctly):
+
+```sh
+# Run Genealogy Tree
+./bin/ArboGenealogico.exe
+
+# Run AVL Tree
+./bin/ArbolAvl.exe
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## License
+
+Distributed under the MIT License.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[Cpp-shield]: https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white
+[Cpp-url]: https://isocpp.org/
